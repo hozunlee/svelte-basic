@@ -1,6 +1,6 @@
 <script>
-	const name = 'hojun';
+	const name = 'Hojun';
 </script>
 
-<h1>Welcome to SvelteKit {name}</h1>
+<h1>Welcome to SvelteKit {name.toUpperCase()}</h1>
 <div>hello</div>
