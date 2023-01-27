@@ -1,17 +1,33 @@
 <script>
-	let user = { loggedIn: false };
+	import { each } from 'svelte/internal';
 
-	$: {
-		console.log(user.loggedIn);
-	}
-
-	const toggle = () => {
-		user.loggedIn = !user.loggedIn;
-	};
+	let cats = [
+		{
+			id: 'J---aiyznGQ',
+			name: 'Keyboard Cat'
+		},
+		{
+			id: 'z_AbfPXTKms',
+			name: 'Maru'
+		},
+		{
+			id: 'OUtn3pvWmpg',
+			name: 'Henri The Existential Cat'
+		}
+	];
 </script>
 
-{#if user.loggedIn}
-	<button on:click={toggle}>Log out</button>
-{:else}
-	<button on:click={toggle}>Log in</button>
-{/if}
+<h1>The Famous Cats of YouTube</h1>
+
+<ul>
+	{#each cats as cat, i}
+		<li>
+			<p>{i + 1}:</p>
+			<p>
+				<a target="_blank" href="https://www.youtube.com/watch?v={cat.id}">
+					{cat.name}
+				</a>
+			</p>
+		</li>
+	{/each}
+</ul>
