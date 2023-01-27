@@ -1,22 +1,12 @@
 <script>
-	import Nested from './Nested.svelte';
+	// your script goes here
+	let string = `this string contains some <strong>HTML!!!!!CSS</strong>`;
 </script>
 
-<div>
-	<p>This is a test</p>
-	<Nested />
-</div>
+<!-- But sometimes you need to render HTML directly into a component. -->
+<p>{@html string}</p>
 
+<!-- markup (zero or more items) goes here -->
 <style>
-	div {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	p {
-		color: purple;
-		font-family: 'Comic Sans MS';
-		font-size: 2em;
-	}
+	/* your styles go here */
 </style>
