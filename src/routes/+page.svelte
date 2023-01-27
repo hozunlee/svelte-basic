@@ -1,10 +1,18 @@
 <script>
 	// your script goes here
-	let string = `this string contains some <strong>HTML!!!!!CSS</strong>`;
+	let count = 0;
+
+	const increment = () => {
+		count += 1;
+	};
 </script>
 
-<!-- But sometimes you need to render HTML directly into a component. -->
-<p>{@html string}</p>
+<div>
+	<button on:click={increment}>
+		Clicked {count}
+		{count <= 1 ? 'time' : 'times'}
+	</button>
+</div>
 
 <!-- markup (zero or more items) goes here -->
 <style>
