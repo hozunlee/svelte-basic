@@ -1,6 +1,16 @@
-<script>
-	const name = 'Hojun';
-</script>
+<div>
+	<p>This is a test</p>
+</div>
 
-<h1>Welcome to SvelteKit {name.toUpperCase()}</h1>
-<div>hello</div>
+<style>
+	div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	p {
+		color: purple;
+		font-family: 'Comic Sans MS';
+		font-size: 2em;
+	}
+</style>
