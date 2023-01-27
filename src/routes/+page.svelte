@@ -1,34 +1,23 @@
 <script>
-	// your script goes here
-	let count = 0;
+	let numbers = [1, 2, 3, 4];
 
-	// 첫 실행 시에만 동작한다.
-	console.log(count);
-
-	// 반응형 밸류는 count가 바뀔 때마다 실행한다. like useEffect
 	$: {
-		console.log(`the count is ${count}`);
+		console.log(numbers);
 	}
 
-	$: if (count >= 10) {
-		alert('reset');
-		count = 0;
+	function addNumber() {
+		// push 메서드는 set 을 부르지 않는다.
+		// numbers.push(numbers.length + 1);
+		// numbers에 =으로 number를 할당해주면, set 함수가 작동하여 reactivity해진다.
+		// numbers = numbers;
+
+		// numbers = [...numbers, numbers.length + 1];
+		numbers[numbers.length] = numbers.length + 1;
 	}
 
-	const increment = () => {
-		count += 1;
-	};
+	$: sum = numbers.reduce((t, n) => t + n, 0);
 </script>
 
-<div>
-	<button on:click={increment}>
-		Clicked {count}
-		{count <= 1 ? 'time' : 'times'}
-	</button>
-	<p>{count} doubled is {count * 2}</p>
-</div>
+<p>{numbers.join(' + ')} = {sum}</p>
 
-<!-- markup (zero or more items) goes here -->
-<style>
-	/* your styles go here */
-</style>
+<button on:click={addNumber}> Add a number </button>
