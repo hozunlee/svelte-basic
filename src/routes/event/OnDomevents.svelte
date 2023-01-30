@@ -15,7 +15,7 @@
 <style>
 	div {
 		width: 100%;
-		height: 100%;
+		height: 20%;
 		background-color: blueviolet;
 	}
 </style>
