@@ -1,7 +1,7 @@
 <script>
-	import AwaitBlocks from '../components/logic/AwaitBlocks.svelte';
-	import Each from '../components/logic/Each.svelte';
-	import KeyedEach from '../components/logic/KeyedEach.svelte';
+	import AwaitBlocks from './AwaitBlocks.svelte';
+	import Each from './Each.svelte';
+	import KeyedEach from './KeyedEach.svelte';
 </script>
 
 <h1>Logic part</h1>
