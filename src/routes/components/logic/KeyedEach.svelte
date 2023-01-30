@@ -1,5 +1,4 @@
 <script>
-	import { debug } from 'svelte/internal';
 	import Thing from './Thing.svelte';
 
 	let things = [
@@ -15,6 +14,7 @@
 	};
 </script>
 
+<h2>Each에 key값이 필요한 이유</h2>
 <button on:click={handleClick}> Remove first thing </button>
 
 <!-- loop에 key 값을 추가해야하는 이유 

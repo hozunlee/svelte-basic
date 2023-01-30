@@ -15,7 +15,7 @@
 	];
 </script>
 
-<h1>The Famous Cats of YouTube</h1>
+<h2>Each를 활용해 배열 돌리기</h2>
 
 <ul>
 	{#each cats as cat, i}
