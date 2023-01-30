@@ -7,4 +7,5 @@
 	}
 </script>
 
+<!-- 양방향 props  -->
 <Inner on:message={handleMessage} />
