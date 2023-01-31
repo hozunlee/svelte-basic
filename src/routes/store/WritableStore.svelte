@@ -21,6 +21,10 @@
 <h1>WritableStore</h1>
 <h2>the count is {$count}</h2>
 
-<Incrementer />
+<!-- <Incrementer />
 <Decrementer />
-<Resetter />
+<Resetter /> -->
+
+<button on:click={count.increment}>+</button>
+<button on:click={count.decrement}>-</button>
+<button on:click={count.reset}>reset</button>

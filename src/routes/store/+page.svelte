@@ -1,5 +1,6 @@
 <script>
 	import ReadableStore from './ReadableStore.svelte';
+	import StoreBind from './storeBind.svelte';
 	import WritableStore from './WritableStore.svelte';
 </script>
 
@@ -7,6 +8,7 @@
 
 <WritableStore />
 <ReadableStore />
+<StoreBind />
 
 <style>
 	h1 {
