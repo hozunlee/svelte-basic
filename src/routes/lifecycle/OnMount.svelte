@@ -1,5 +1,5 @@
 <script>
-	import { onMount } from 'svelte';
+	import { onDestroy, onMount } from 'svelte';
 
 	let data;
 
@@ -13,6 +13,9 @@
 		return () => {
 			console.log('컴포넌트 클린업');
 		};
+	});
+	onDestroy(() => {
+		console.log('컴포넌트 언마운트 for onDestroy');
 	});
 </script>
 
