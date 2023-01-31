@@ -25,6 +25,7 @@ Svelte에게 구성 요소가 업데이트 될 때 어떤 DOM 노드를 변경�
 
 	<!-- html에서 console.log 찍는 방법 -->
 	{(console.log('in each', thing), '')}
+	{@debug thing}
 
 	<!-- undefined가 찍힘 -->
 	<!-- {console.log('in each', thing)} -->
