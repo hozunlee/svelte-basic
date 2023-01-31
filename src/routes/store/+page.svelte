@@ -1,16 +1,17 @@
 <script>
-	import { count } from './stores.js';
-	import Incrementer from './Incrementer.svelte';
-	import Decrementer from './Decrementer.svelte';
-	import Resetter from './Resetter.svelte';
-	let count_value;
-
-	// count가 바뀌는 걸 구독하겠다는 의미
-	count.subscribe((value) => (count_value = value));
+	import ReadableStore from './ReadableStore.svelte';
+	import WritableStore from './WritableStore.svelte';
 </script>
 
-<h1>the count is {count_value}</h1>
+<h1>store part</h1>
 
-<Incrementer />
-<Decrementer />
-<Resetter />
+<WritableStore />
+<ReadableStore />
+
+<style>
+	h1 {
+		background-color: brown;
+		color: aliceblue;
+		text-shadow: 2px;
+	}
+</style>
