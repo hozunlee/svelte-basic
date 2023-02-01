@@ -5,6 +5,7 @@
 	<a href="bindings">binding</a>
 	<a href="lifecycle">LifeCycle</a>
 	<a href="store">store</a>
+	<a href="blog">blog</a>
 </div>
 
 <slot />
