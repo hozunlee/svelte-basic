@@ -6,6 +6,7 @@
 	<a href="lifecycle">LifeCycle</a>
 	<a href="store">store</a>
 	<a href="blog">blog</a>
+	<a href="motion">motion</a>
 </div>
 
 <slot />
