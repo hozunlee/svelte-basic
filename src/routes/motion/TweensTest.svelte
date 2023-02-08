@@ -28,7 +28,7 @@
 
 <style>
 	progress {
-		display: block;
+		/* display: block; */
 		width: 100%;
 	}
 </style>

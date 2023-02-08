@@ -1,5 +1,6 @@
 <script>
 	import SpringsTest from './SpringsTest.svelte';
+	import TransitionTest from './TransitionTest.svelte';
 	import TweensTest from './TweensTest.svelte';
 </script>
 
@@ -7,8 +8,9 @@
 
 <div class="container">
 	<TweensTest />
-	<SpringsTest />
 </div>
+<SpringsTest />
+<TransitionTest />
 
 <style>
 </style>
